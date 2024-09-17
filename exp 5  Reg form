@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body { font-family: Arial; display: flex; justify-content: center; }
+        form { width: 200px; }
+        input, select { width: 100%; margin: 5px 0; padding: 5px; }
+        button { width: 100%; padding: 5px; background: green; color: white; }
+    </style>
+</head>
+<body>
+    <form>
+        <input type="text" placeholder="Name" required>
+        <input type="text" placeholder="ID" required>
+        <input type="text" placeholder="Address" required>
+        <input type="text" placeholder="Department" required>
+        <input type="tel" placeholder="Mobile" required>
+        <select required>
+            <option>CHENNAI</option>
+            <option>VELLORE</option>
+            <option>THIRUVANAMALAI</option>
+            <option>THANJAVUR</option>
+        </select>
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>
