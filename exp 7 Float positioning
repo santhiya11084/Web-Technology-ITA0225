@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Float Positioning Example</title>
+</head>
+<body>
+    <div class="float-container">
+        <div class="float-left">Left Floating Element</div>
+        <div class="float-right">Right Floating Element</div>
+    </div>
+</body>
+</html>
+.float-container {
+    width: 100%;
+    overflow: hidden;
+}
+.float-left {
+    float: left;
+    width: 50%;
+    background-color: lightgreen;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.float-right {
+    float: right;
+    width: 50%;
+    background-color: lightcoral;
+    padding: 10px;
+    box-sizing: border-box;
+}
