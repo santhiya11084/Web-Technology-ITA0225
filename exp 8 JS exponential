@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Number Operations</title>
+    <script>
+        function showResults() {
+            let number = 5;
+            let expValue = Math.exp(number);
+            let limitedDecimal = expValue.toFixed(2);
+            let numberString = number.toString();
+            let negativeInfinity = Number.NEGATIVE_INFINITY;
+
+            document.getElementById("exp").textContent = `Exponential Value: ${expValue}`;
+            document.getElementById("limited-decimal").textContent = `Limited Decimal Value: ${limitedDecimal}`;
+            document.getElementById("number-string").textContent = `Number as String: ${numberString}`;
+            document.getElementById("negative-infinity").textContent = `Negative Infinity: ${negativeInfinity}`;
+        }
+    </script>
+</head>
+<body onload="showResults()">
+    <h1>JavaScript Number Operations</h1>
+    <p id="exp"></p>
+    <p id="limited-decimal"></p>
+    <p id="number-string"></p>
+    <p id="negative-infinity"></p>
+</body>
+</html>
