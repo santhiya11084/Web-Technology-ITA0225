@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture Slider with Radio Buttons</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .slider-container {
+            position: relative;
+            width: 60%;
+            max-width: 600px;
+            overflow: hidden;
+            border: 5px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .slides {
+            display: flex;
+            width: 500%;
+            transition: 0.6s ease;
+        }
+        .slide {
+            width: 100%;
+            flex-shrink: 0;
+        }
+        .slide img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .radio-buttons {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+        }
+        .radio-buttons input[type="radio"] {
+            display: none;
+        }
+        .radio-buttons label {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: #ddd;
+            cursor: pointer;
+        }
+        input[type="radio"]:checked + label {
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="slider-container">
+        <div class="slides">
+            <div class="slide">
+                <img src="https://via.placeholder.com/600x400/FF5733/FFFFFF?text=Slide+1" alt="Slide 1">
+            </div>
+            <div class="slide">
+                <img src="https://via.placeholder.com/600x400/33FF57/FFFFFF?text=Slide+2" alt="Slide 2">
+            </div>
+            <div class="slide">
+                <img src="https://via.placeholder.com/600x400/3357FF/FFFFFF?text=Slide+3" alt="Slide 3">
+            </div>
+            <div class="slide">
+                <img src="https://via.placeholder.com/600x400/FF33A5/FFFFFF?text=Slide+4" alt="Slide 4">
+            </div>
+            <div class="slide">
+                <img src="https://via.placeholder.com/600x400/F3FF33/FFFFFF?text=Slide+5" alt="Slide 5">
+            </div>
+        </div>
+
+        <div class="radio-buttons">
+            <input type="radio" name="slider" id="radio1" checked>
+            <label for="radio1"></label>
+
+            <input type="radio" name="slider" id="radio2">
+            <label for="radio2"></label>
+
+            <input type="radio" name="slider" id="radio3">
+            <label for="radio3"></label>
+
+            <input type="radio" name="slider" id="radio4">
+            <label for="radio4"></label>
+
+            <input type="radio" name="slider" id="radio5">
+            <label for="radio5"></label>
+        </div>
+    </div>
+
+    <script>
+        const slides = document.querySelector('.slides');
+        const radioButtons = document.querySelectorAll('input[type="radio"]');
+
+        radioButtons.forEach((radio, index) => {
+            radio.addEventListener('change', () => {
+                slides.style.transform = `translateX(-${index * 100}%)`;
+            });
+        });
+    </script>
+
+</body>
+</html>
