@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Absolute Positioning</title>
+</head>
+<body>
+    <div class="position-container">
+        <div class="position-absolute"></div>
+        <div class="position-absolute-2"></div>
+    </div>
+</body>
+</html>
+
+.position-container {
+    position: relative;
+    height: 200px;
+    width: 200px;
+}
+.position-absolute {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+}
+.position-absolute-2 {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: lightcoral;
+}
