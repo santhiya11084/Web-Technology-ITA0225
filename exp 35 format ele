@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Formatting Elements</title>
+</head>
+<body>
+    <h1>Special Types of Text</h1>
+
+    <h3>(1) Emphasized Text</h3>
+    <p>This is an <em>emphasized</em> sentence.</p>
+
+    <h3>(2) Marked Text</h3>
+    <p>This is a <mark>marked</mark> text for highlighting important parts.</p>
+
+    <h3>(3) Inserted Text</h3>
+    <p>This is an <ins>inserted</ins> sentence.</p>
+
+    <h3>(4) Subscript and Superscript Text</h3>
+    <p>Water formula is H<sub>2</sub>O and the square of 5 is 5<sup>2</sup>.</p>
+
+    <h3>(5) Deleted Text</h3>
+    <p>This is a <del>deleted</del> sentence.</p>
+
+    <h3>(6) Bold and Italic Text</h3>
+    <p>This is <b>bold</b> and <i>italic</i> text for emphasis.</p>
+
+</body>
+</html>
