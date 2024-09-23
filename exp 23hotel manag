@@ -1,0 +1,37 @@
+
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dish Selection</title>
+</head>
+<body>
+    <h1>Select Dishes</h1>
+    <form action="dishSelection.jsp" method="post">
+        <input type="checkbox" name="dishes" value="Pizza"> Pizza<br>
+        <input type="checkbox" name="dishes" value="Burger"> Burger<br>
+        <input type="checkbox" name="dishes" value="Pasta"> Pasta<br>
+        <input type="checkbox" name="dishes" value="Salad"> Salad<br>
+        <input type="submit" value="Confirm Selection">
+    </form>
+    
+    <%-- Process form data if POST request --%>
+    <%
+        if ("POST".equalsIgnoreCase(request.getMethod())) {
+            String[] dishes = request.getParameterValues("dishes");
+            out.println("<h2>Confirmed Dishes</h2>");
+            if (dishes == null || dishes.length == 0) {
+                out.println("<p>No dishes selected.</p>");
+            } else {
+                out.println("<ul>");
+                for (String dish : dishes) {
+                    out.println("<li>" + dish + "</li>");
+                }
+                out.println("</ul>");
+            }
+        }
+    %>
+</body>
+</html>
