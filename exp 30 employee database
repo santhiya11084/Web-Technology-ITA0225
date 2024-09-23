@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Registration</title>
+</head>
+<body>
+    <h1>Employee Registration Form</h1>
+    <form action="employeeRegister.jsp" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="position">Position:</label>
+        <input type="text" id="position" name="position" required><br><br>
+
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>
+
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Registration Confirmation</title>
+</head>
+<body>
+    <h1>Employee Registration Details</h1>
+    <%
+        // Get form data from the request
+        String name = request.getParameter("name");
+        String age = request.getParameter("age");
+        String email = request.getParameter("email");
+        String position = request.getParameter("position");
+
+        // Display the collected data
+    %>
+    <p><strong>Name:</strong> <%= name %></p>
+    <p><strong>Age:</strong> <%= age %></p>
+    <p><strong>Email:</strong> <%= email %></p>
+    <p><strong>Position:</strong> <%= position %></p>
+</body>
+</html>
