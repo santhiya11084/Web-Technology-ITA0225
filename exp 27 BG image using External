@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS -->
+    <title>Background Image Example</title>
+</head>
+<body>
+    <h1>Background Image Example</h1>
+</body>
+</html>
+// CASCADING STYLE SHEETS //
+body {
+    background: url('https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630') repeat;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 50px;
+}
