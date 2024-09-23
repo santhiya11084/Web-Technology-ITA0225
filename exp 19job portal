@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Portal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .job-listing {
+            background-color: #fff;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .job-title {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .apply-button {
+            display: inline-block;
+            padding: 10px 20px;
+            color: #fff;
+            background-color: #007bff;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Job Portal</h1>
+    </div>
+    <div class="container">
+        <div class="job-listing">
+            <div class="job-title">Software Developer</div>
+            <p>Company: XYZ Corp</p>
+            <p>Location: New York, NY</p>
+            <a href="#" class="apply-button">Apply Now</a>
+        </div>
+        <div class="job-listing">
+            <div class="job-title">Graphic Designer</div>
+            <p>Company: ABC Design Studio</p>
+            <p>Location: San Francisco, CA</p>
+            <a href="#" class="apply-button">Apply Now</a>
+        </div>
+    </div>
+</body>
+</html>
