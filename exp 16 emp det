@@ -1,0 +1,35 @@
+
+import java.io.*;
+import javax.servlet.*;
+import javax.servlet.http.*;
+
+public class EmployeeServlet extends HttpServlet {
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        response.setContentType("text/html");
+        PrintWriter out = response.getWriter();
+
+        // Get employee details from request parameters
+        String name = request.getParameter("name");
+        String id = request.getParameter("id");
+        String department = request.getParameter("department");
+
+        // Display the details
+        out.println("<html><body>");
+        out.println("<h1>Employee Details</h1>");
+        out.println("<p><b>Name:</b> " + name + "</p>");
+        out.println("<p><b>ID:</b> " + id + "</p>");
+        out.println("<p><b>Department:</b> " + department + "</p>");
+        out.println("</body></html>");
+    }
+}
+<!DOCTYPE html>
+<html>
+<body>
+    <form action="EmployeeServlet" method="get">
+        Name: <input type="text" name="name"><br>
+        ID: <input type="text" name="id"><br>
+        Department: <input type="text" name="department"><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
