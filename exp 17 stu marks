@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mark List</title>
+</head>
+<body>
+    <h1>Class Test Mark List</h1>
+    <table border="1">
+        <tr>
+            <th>Student Name</th>
+            <th>Marks</th>
+        </tr>
+        <tr>
+            <td>Alice Smith</td>
+            <td>85</td>
+        </tr>
+        <tr>
+            <td>Bob Johnson</td>
+            <td>78</td>
+        </tr>
+        <tr>
+            <td>Charlie Brown</td>
+            <td>92</td>
+        </tr>
+        <tr>
+            <td>David Wilson</td>
+            <td>88</td>
+        </tr>
+    </table>
+</body>
+</html>
