@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Operations</title>
+    <script>
+        function performStringOperations() {
+            // (1) Returning the character at a specified location
+            let str = "Hello, World!";
+            let charAtIndex = str.charAt(7); // Get character at index 7
+            document.getElementById("charAtIndex").textContent = "Character at index 7: " + charAtIndex;
+
+            // (2) Returns the Unicode of the character at the specified index
+            let unicodeAtIndex = str.charCodeAt(7); // Get Unicode value at index 7
+            document.getElementById("unicodeAtIndex").textContent = "Unicode at index 7: " + unicodeAtIndex;
+
+            // (3) Joins two or more strings and returns a new joined string
+            let str1 = "Hello";
+            let str2 = "World";
+            let joinedString = str1.concat(", ", str2, "!");
+            document.getElementById("joinedString").textContent = "Joined string: " + joinedString;
+
+            // (4) Converts Unicode value to string
+            let unicodeValue = 72; // Unicode value for 'H'
+            let stringFromUnicode = String.fromCharCode(unicodeValue);
+            document.getElementById("stringFromUnicode").textContent = "String from Unicode 72: " + stringFromUnicode;
+
+            // (5) Converts a string to uppercase letters
+            let originalString = "convert this to uppercase";
+            let upperCaseString = originalString.toUpperCase();
+            document.getElementById("upperCaseString").textContent = "Uppercase string: " + upperCaseString;
+        }
+    </script>
+</head>
+<body onload="performStringOperations()">
+    <h1>String Operations in JavaScript</h1>
+    <p id="charAtIndex"></p>
+    <p id="unicodeAtIndex"></p>
+    <p id="joinedString"></p>
+    <p id="stringFromUnicode"></p>
+    <p id="upperCaseString"></p>
+</body>
+</html>
