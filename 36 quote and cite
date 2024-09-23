@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotation and Citation Example</title>
+</head>
+<body>
+    <h1>Quotation and Citation Example</h1>
+
+    <h3>Blockquote Example</h3>
+    <blockquote cite="https://www.brainyquote.com">
+        "The only limit to our realization of tomorrow is our doubts of today." 
+    </blockquote>
+    <p>- Franklin D. Roosevelt</p>
+
+    <h3>Inline Quotation Example</h3>
+    <p>As Albert Einstein once said, <q>Imagination is more important than knowledge.</q></p>
+
+    <h3>Citation Example</h3>
+    <p>The article was sourced from <cite>The New York Times</cite>.</p>
+
+</body>
+</html>
