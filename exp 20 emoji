@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emoji Positioning</title>
+    <style>
+        .emoji {
+            font-size: 50px;
+            position: relative;
+            top: 10px;
+            left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Emojis with CSS Positioning</h1>
+    <p class="emoji">&#128512; &#128515; &#128516;</p>
+</body>
+</html>
